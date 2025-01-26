@@ -1,0 +1,26 @@
+# Allow all bots
+User-agent: *
+
+# Disallow access to development and source files
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /src/pages/
+
+# Disallow specific files
+Disallow: /README.md
+Disallow: /package-lock.json
+Disallow: /package.json
+Disallow: /tsconfig.json
+Disallow: /tsconfig.app.json
+Disallow: /tsconfig.node.json
+Disallow: /vite.config.ts
+Disallow: /eslint.config.js
+Disallow: /declarations.d.ts
+Disallow: /vite-env.d.ts
+
+# Allow access to public assets and the main site
+Allow: /public/
+Allow: /index.html
+
+# Sitemap location (update URL)
+Sitemap: https://dapsl.dev/sitemap.xml
